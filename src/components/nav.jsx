@@ -2,15 +2,17 @@ import * as R from 'ramda';
 
 const HOME_TITLE = 'Blackjack counting';
 
+// bit.ly links to check interaction
+// TODO: create custom link shortener?
 const SOCIALS = [
-  { url: 'https://twitter.com/lalonso97', icon: 'fa-brands fa-twitter' },
-  { url: 'https://www.linkedin.com/in/laalonso997/', icon: 'fa-brands fa-linkedin' },
-  { url: 'https://github.com/luisalonso97', icon: 'fa-brands fa-github' }
+  { url: 'https://bit.ly/3soFRrY', icon: 'fa-brands fa-twitter-square' },
+  { url: 'https://bit.ly/3HqVHGE', icon: 'fa-brands fa-linkedin' },
+  { url: 'https://bit.ly/3Hrc71T', icon: 'fa-brands fa-github-square' }
 ];
 
 const Link = ({url, icon}) => {
   return (
-    <span className="px-3 transition ease-in hover:animate-wiggle">
+    <span className="px-2 sm:px-3 transition ease-in hover:animate-wiggle">
       <a href={url} target="_blank"><i className={icon}></i></a>
     </span>
   );
@@ -19,7 +21,7 @@ const Link = ({url, icon}) => {
 const LinkContainer = ({links = SOCIALS}) => {
   return (
       <div className="flex w-1/4 h-full justify-end text-white">
-        <span className="flex items-center justify-end text-base sm:text-lg md:text-lg text-bold">
+        <span className="flex items-center justify-end text-xl text-bold">
           { R.map(link_obj => Link(link_obj), links) }
         </span>
       </div>
