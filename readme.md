@@ -10,11 +10,11 @@
   <p align="center">
     Learn to count cards
     <br />
-    <a href="#">View Demo</a>
+    <a href="https://blackjack.lalonso.me/">View Demo</a>
     ·
-    <a href="#">Report Bug</a>
+    <a href="https://github.com/luisalonso97/blackjack-count/issues">Report Bug</a>
     ·
-    <a href="#">Request Feature</a>
+    <a href="https://github.com/luisalonso97/blackjack-count/issues">Request Feature</a>
   </p>
 </div>
 
@@ -85,7 +85,7 @@ If you want to run this project locally
 
 ### Prerequisites
 
-Use the latest version on npm
+Use the latest version of npm
 ```sh
 npm install npm@latest -g
 ```
