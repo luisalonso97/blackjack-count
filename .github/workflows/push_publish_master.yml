@@ -36,4 +36,4 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm install
       - run: npm run build
-      - run: cp -r ./dist ${{ secrets.REMOTE_PATH }}
+      - run: sudo cp -r ./dist ${{ secrets.REMOTE_PATH }}
