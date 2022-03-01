@@ -20,7 +20,7 @@ const Link = ({url, icon}) => {
 
 const LinkContainer = ({links = SOCIALS}) => {
   return (
-      <div className="flex w-1/4 h-full justify-end text-white">
+      <div className="flex w-1/4 h-full justify-end">
         <span className="flex items-center justify-end text-xl text-bold">
           { R.map(link_obj => Link(link_obj), links) }
         </span>
@@ -30,18 +30,20 @@ const LinkContainer = ({links = SOCIALS}) => {
 
 const HomeTitle = ({title = HOME_TITLE}) => {
   return (
-    <div className="flex w-3/4 h-full justify-start text-white">
-      <span className="flex pl-1 items-center text-lg md:text-xl">
-        <i className="text-2xl transition ease-in delay-150 hover:animate-wiggle em em-black_joker"></i>
-        <span className="pl-2 font-bold">{title}</span>
-      </span>
+    <div className="flex w-3/4 h-full justify-start">
+      <a href="https://blackjack.lalonso.me/">
+        <span className="flex pl-1 items-center text-lg md:text-xl">
+          <i className="text-2xl transition ease-in delay-150 hover:animate-wiggle em em-black_joker"></i>
+          <span className="pl-2 font-bold">{title}</span>
+        </span>
+      </a>
     </div>
   );
-}
+};
 
 export const Navbar = () => {
   return (
-    <nav className="bg-p-dark-navy p-2 mt-0 fixed flex flex-row w-full h-14 z-10 top-0">
+    <nav className="bg-p-dark-navy p-2 mt-0 fixed flex flex-row w-full h-14 z-10 top-0 text-white">
       <div className="flex items-center w-full">
         <HomeTitle/>
         <LinkContainer/>

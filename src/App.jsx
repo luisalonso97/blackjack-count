@@ -7,9 +7,9 @@ const App = () => {
       <header>
         <Navbar/>
       </header>
-      {/* <main>
+      <main>
         <Content/>
-      </main> */}
+      </main>
     </>
   );
 };

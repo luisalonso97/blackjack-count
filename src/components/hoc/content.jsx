@@ -3,9 +3,14 @@ import { Blackjack } from '../blackjack'
 
 export const Content = () => {
   return (
-    <div className="flex flex-col md:flex-row w-full mt-14">
+    <div className="flex
+                    flex-col-reverse
+                    w-full
+                    h-[calc(100vh-3.5rem)]
+                    mt-14
+                    md:flex-row">
       <Sidebar/>
-      {/* <Blackjack/> */}
+      <Blackjack/>
     </div>
   );
 }
